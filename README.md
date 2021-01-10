@@ -15,8 +15,8 @@ A few resources to get you started if this is your first Flutter project:
 
 2. Copy extracted folder to wherever you want on your machine.
 
-3. Go to your user folder and make sure that setting "show hidden files" is turned on. You will see there ".bash_profile" file. If you are on macOS Catalina or higher you will have ".zprofile" file. Edit the file so that you add 'export PATH="$PATH:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin"' at the bottom of your file, and change [PATH_TO_FLUTTER_GIT_DIRECTORY] with the path to flutter tool on your machine. That of course depends on where you dragged on extracted folder 
-(Ex. 'export PATH=/Users/jasminmulic/development/flutter/bin:$PATH). Save the file and open normal terminal app on Mac or Linux. You should run 'flutter doctor' command to get at last something on the screen so to verify you've been successfull in installing Flutter on your machine.
+3. Go to your user folder and make sure that setting "show hidden files" is turned on. You will see there ".bash_profile" file. If you are on macOS Catalina or higher you will have ".zprofile" file. Edit the file so that you add 'export PATH=[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin:$PATH' at the bottom of your file, and change [PATH_TO_FLUTTER_GIT_DIRECTORY] with the path to flutter tool on your machine. That of course depends on where you dragged on extracted folder 
+(Ex. 'export PATH=/Users/jasminmulic/development/flutter/bin:$PATH). Save the file and open normal terminal app on Mac or Linux. You should run 'flutter doctor' command to get at least something on the screen so to verify you've been successfull in installing Flutter on your machine.
 
 4. Install Xcode by downloading it from AppStore. Then make sure you can use command-line tools by running command 'sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer' from the command line. Accept licence agreements.
 
@@ -38,9 +38,9 @@ A few resources to get you started if this is your first Flutter project:
 
 4. Run 'flutter doctor' and if having error message 'Unable to locate Android SDK', edit User Environment Variables by adding new user variable with variable name: 'ANDROID_SDK_ROOT' and variable value equal to the 'android-sdk' path on you machine.
 
-5. Restart cmd or Power shell and rerun 'flutter doctor' command. If facing an error related to Android licences run the comand 'flutter doctor --android-licenses'. Accept everything you are asked for below, and by this Android tool chain is configured correctly. Ignore any other warnings stated below in terminal.
+5. Restart cmd or Power shell and rerun 'flutter doctor' command. If facing an error related to Android licences run the command 'flutter doctor --android-licenses'. Accept everything you are asked for below, and by this Android tool chain is configured correctly. Ignore any other warnings stated below in terminal.
 
-6. You can use real Android device for testing your flutter apps, and for that please efer to the offical documentation on the Flutter webpage.
+6. You can use real Android device for testing your flutter apps, and for that please refer to the offical documentation on the Flutter webpage.
 
 7. Start Android Studio, click 'Configure', verify you have Android SDK installed, and please make sure selected item is the stable one with more than one characters in parantheses stated next to the SDK's name. 
 
