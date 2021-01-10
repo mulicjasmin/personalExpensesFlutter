@@ -48,6 +48,28 @@ A few resources to get you started if this is your first Flutter project:
 
 9. Back to Android Studio, open existing flutter project, and go to 'Tools->AVD Manager' and add some device if no device in list. You can start desired device emulator by clicking on green 'Play' button. Quit running flutter process if there is and rerun "flutter run" command. For restart of the build use "r" character in your terminal window where app is being run.
 
+## Android Licenses & XMLSchema Error
+
+In the next lectures, we're going to install Flutter for Windows.
+
+In case you need to run the flutter doctor --android-licenses command (shown in next lectures), you might be facing the below error:
+
+Exception in thread "main" java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlSchema
+at com.android.repository.api.SchemaModule$SchemaModuleVersion.<init>(SchemaModule.java:156)
+at com.android.repository.api.SchemaModule.<init>(SchemaModule.java:75)
+at com.android.sdklib.repository.AndroidSdkHandler.<clinit>(AndroidSdkHandler.java:81)
+(or some similar error, mentioning XMLSchema)
+
+If you should be facing this error, try this fix:
+
+Go to your environment variables (just as we do it in the next lectures) and remove the JAVA_HOME variable if you have that variable. Save the value that was stored in the variable before you remove it, so that you could re-add it in the future!
+
+Also edit the PATH variable to remove the jdk path, in case you have such a path in there. Also save that value before you remove it, so that you could re-add this as well.
+
+With those changes made, the flutter doctor --android-licenses should work.
+
+If you can't resolve the issue, also have a look at this thread - it offers more possible solutions for this problem: https://github.com/flutter/flutter/issues/28230
+
 #### For any problems in this part, please refer to the official documentation where you will find all needed informations for your setup.
 
 
